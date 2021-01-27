@@ -16,7 +16,7 @@
 .logo-search{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+   
 }
 
 .logo{
@@ -283,6 +283,9 @@
         width: 250px;
     }
 
+    .logo-search{
+        width: 50%;
+    }
     .articulos{
         display: flex;
         justify-content: space-between;
@@ -301,6 +304,11 @@
     }
     .box .descripcion:hover {
         opacity: 1;
+    }
+
+    .copyright{
+        text-align: center;
+       margin-top: 15px;
     }
 
 }
