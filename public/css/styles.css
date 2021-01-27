@@ -2,7 +2,8 @@
 
     font-family: 'Roboto',sans-serif;
     box-sizing: border-box;
- 
+ margin: 0px;
+ padding: 0px;
 }
 
 
@@ -12,9 +13,14 @@
     padding: 20px;
 }
 
+.logo-search{
+    display: flex;
+    justify-content: space-between;
+}
 
 .logo{
     width: 200px;
+    flex-grow: 1;
 }
 
 .copy-header{
@@ -23,7 +29,9 @@
 }
 
 .search-bar{
-    display: none;
+    flex-grow: 1;
+    align-self: center;
+    width: 30%;
 }
 
 .hamburger-button{
@@ -79,6 +87,7 @@
     width: 400px;
     margin: auto;
     text-align: left;
+    position: relative;
 }
 
 .box i{
@@ -88,11 +97,11 @@
     padding: 5px;
     width: 30px;
     height: 30px;
-    /* position: absolute; */
+    position: absolute;
     border: solid 1px #39b54a;
     border-radius: 50%;
-    /* right: 20px; */
-    /* top: -15px; */
+    right: 20px; 
+     top: -15px;
 
 }
 
@@ -115,6 +124,15 @@
     color:#1259c3;
 }
 
+.footer-section i:hover {
+    color: #EAC926;
+}
+
+.login .btn:hover {
+     background-color: #0022AA; 
+   
+}
+
 .footer-article{
     margin-bottom: 50px;
     padding: 0 15px;
@@ -127,10 +145,61 @@
     font-size: 12px;
 }
 
+.input-login{
+    border-radius: 5px;
+    width: 20%;
+    height: 20px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.first-group input{
+    margin-top: 15px;
+}
+
+.check-interes{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-registro, .first-group input, .third-group input{
+    border-radius: 5px;
+    width: 20%;
+    height: 20px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.search-bar input{
+    border-radius: 5px;
+    height: 20px;
+    border: none;
+}
+
+.buttons{
+    
+}
+
+.login{
+    padding: 10px;
+}
+
+.btn {
+    background-color: #1259c3;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+/* Tablets */
+@media(min-width:768px){
+  
 
 
-/* Desktop */
-@media(min-width:769px){
     .header-top-bar{
        
         display:flex;
@@ -161,7 +230,21 @@
         margin: 0 5px;
     }
  
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
+
+    }
+
+    .articulos{
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+    }
 }
+
+
 
 
 /* Large screen */
@@ -197,4 +280,25 @@
     .logo{
         width: 250px;
     }
+
+    .articulos{
+        display: flex;
+        justify-content: space-between;
+         flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .footer-texts{
+        display: flex;
+        flex-direction: row;
+       
+    }
+
+    .box .descripcion  {
+        opacity: 0;
+    }
+    .box .descripcion:hover {
+        opacity: 1;
+    }
+
 }
