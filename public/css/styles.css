@@ -33,6 +33,7 @@
     flex-grow: 1;
     align-self: center;
     width: 30%;
+    margin-left: 4%;
 }
 
 .hamburger-button{
@@ -244,6 +245,16 @@
         /* flex-direction: row; */
         flex-wrap: wrap;
     }
+
+    .search-bar{
+
+        margin-left: 10%;
+    }
+
+    .logo-search{
+        
+        width: 50%;
+    }
 }
 
 
@@ -285,6 +296,7 @@
 
     .logo-search{
         width: 50%;
+        
     }
     .articulos{
         display: flex;
@@ -309,6 +321,11 @@
     .copyright{
         text-align: center;
        margin-top: 15px;
+    }
+
+    .search-bar{
+
+        margin-left: 10%;
     }
 
 }
