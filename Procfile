@@ -1,1 +1,1 @@
-web: node mliebre/app.js
+web: node ./app.js
